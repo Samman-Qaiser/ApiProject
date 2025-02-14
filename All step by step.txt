@@ -1,0 +1,14 @@
+it contains detailed step by step procedure for api creation always keep in mind that whenever you are creating api in laravel you have to intsall
+php artisan install:api 
+it will contain every package required like sanctum,tinker etc it will aso create a new file called api.php necessay for this
+then create a controller define a function there that returns a message, call that class in api.php and then use postman add url with\api\...
+after that inorder to create a table firt create a table  
+php artisan make:migration create_products_table in this define schema of table 
+then create a model
+php artisan make:model Product
+then create controller 
+php artisan make:controllers ProductController
+insert data in that controller
+make two function one for insertion other for fetching data 
+add them into api.php for localhost
+you can also make a view where you can easily fetch the data   but when you want to return a view  you have to adjust your function in controller where you can return view rather than reponse
